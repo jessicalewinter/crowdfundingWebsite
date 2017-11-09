@@ -1,0 +1,12 @@
+.modal{
+    background-color: $roxo-escuro;
+    border-radius: 10px;
+
+    h4{
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        color: white;
+        margin: 15px auto;
+        border-bottom: 2px solid rgba(243, 201, 122,.5);
+    }
+}
