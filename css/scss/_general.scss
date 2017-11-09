@@ -1,0 +1,42 @@
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.nav nav{
+    background: $roxo-escuro center no-repeat;
+    
+    li a{
+        color: $amarelo-claro;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: .3s all ease;
+    }
+    .brand-logo {
+        margin: 0 20px;
+    }
+   
+}
+
+.teste{
+    color: #51d836;
+}
+
+.carousel-item.one {
+    background: url(../img/photo-1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.carousel-item.two {
+    background: url(../img/photo-2.jpg) center no-repeat;
+    background-size: cover;
+}
+.carousel-item.three {
+    background: url(../img/photo-3.jpg) center no-repeat;
+    background-size: cover;
+}
+
