@@ -38,3 +38,23 @@
   /* Colors*/
   $roxo-escuro: #6869DD;
   $amarelo-claro: #F3C97A;
+  $roxo-bem-clarinho:#DFE3F7;
+
+  @mixin device($size) {
+    @if $size == large {
+      @media screen and (min-width: 960px){
+        @content;
+      }
+    }
+      @else if $size == medium {
+      @media screen and (min-width:580px) and (max-width: 959px) {
+        @content;
+      }
+    }
+      
+    @else if $size == small {
+      @media screen and (max-width: 579px){
+        @content;
+      }
+    }
+  }
