@@ -1,3 +1,5 @@
+/* Material Icons*/
+
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -35,10 +37,53 @@
     font-feature-settings: 'liga';
   }
 
+  /* Icomoon Icons*/
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?wougbt');
+    src:  url('../fonts/icomoon.eot?wougbt#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?wougbt') format('truetype'),
+      url('../fonts/icomoon.woff?wougbt') format('woff'),
+      url('../fonts/icomoon.svg?wougbt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  
+
   /* Colors*/
   $roxo-escuro: #6869DD;
   $amarelo-claro: #F3C97A;
   $roxo-bem-clarinho:#DFE3F7;
+
+  /*Fontes */
+
+  $fonte-1: 'Open Sans', sans-serif;
+  $fonte-2: 'Roboto Slab', serif;
 
   @mixin device($size) {
     @if $size == large {

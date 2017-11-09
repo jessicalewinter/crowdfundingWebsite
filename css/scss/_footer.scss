@@ -1,0 +1,42 @@
+footer{
+    background: $roxo-escuro;
+    color: white;
+    background-size: cover;
+    .contato{
+        li span{
+            color:$amarelo-claro;
+            font-weight: bold;
+        }
+    }
+    h3{
+        font-size: 35px;
+        &::after{
+            content: "";
+            display: block;
+            height: 3px;
+            width: 40px;
+            position: absolute;
+            background: white;
+            margin: 8px 0;
+        }
+    }
+    a{
+        color: $amarelo-claro;
+        transition: .3s all ease;
+        &:hover{
+            color: white;
+        }
+    }
+    .redes{
+        span{
+            font-family: 'icomoon';
+            font-size: 30px;
+        }
+    }
+    padding: 20px;
+    
+    @include device(small){
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}

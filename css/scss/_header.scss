@@ -1,0 +1,74 @@
+.nav nav{
+    background: $roxo-escuro center no-repeat;
+    
+    li a{
+        color: $amarelo-claro;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: .3s all ease;
+    }
+    form{
+       
+    }
+    .brand-logo {
+        margin: 0 20px;
+    }
+   
+}
+
+
+.one {
+    background: url(../img/photo-1.jpg) center no-repeat;
+    background-size: cover;
+}
+.two {
+    background: url(../img/photo-2.jpg) center no-repeat;
+    background-size: cover;
+}
+.three {
+    background: url(../img/photo-3.jpg) center no-repeat;
+    background-size: cover;
+}
+.carousel{
+    .carousel-item{
+        h2{
+            margin: 20px auto;
+            margin-top: 100px;
+            text-align: left;
+            max-width: 600px;
+            font-size: 35px;
+           
+        }
+    }
+    a{
+        cursor: pointer;
+        background-color: $roxo-escuro;
+        &:hover{
+            background-color: white !important;
+            color: $roxo-escuro;
+        }
+    }
+    .btn {
+        margin: 10px 20px;
+        font-size: 20px;
+        height: 100%;
+        padding: 15px 20px;
+        border-radius: 10px;
+        transition: .3s all ease-in-out;
+        @include device(small){
+            font-size: 14px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        
+    }
+}
+.carousel.carousel-slider .carousel-item h2{
+    @include device(small){
+        margin: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
